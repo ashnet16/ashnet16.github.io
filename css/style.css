@@ -46,7 +46,9 @@ header {
 }
 
 header .site-name {
-  font-weight: 600;
+  font-family: "Snell Roundhand", "Brush Script MT", "Segoe Script", cursive;
+  font-weight: bold;
+  font-size: 1.8rem;
   text-decoration: none;
   color: var(--fg);
 }
@@ -72,6 +74,13 @@ h2 {
   font-size: 1rem;
   font-weight: 600;
   margin: 2.5rem 0 0.75rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 1.25rem 0 0.5rem;
 }
 
 p {
@@ -120,6 +129,44 @@ a:hover {
 .post-list a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* Book lists */
+.book-list {
+  list-style: none;
+}
+
+.book-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.book-list li:first-child {
+  padding-top: 0;
+}
+
+.book-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.book-list a {
+  display: block;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.book-list a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+}
+
+.book-list .muted {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 0.15rem;
 }
 
 /* Contact links row */
@@ -192,6 +239,12 @@ hr {
   border: none;
   border-top: 1px solid var(--line);
   margin: 2.5rem 0;
+}
+
+.travel-map {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 1.5rem 0;
 }
 
 footer {
