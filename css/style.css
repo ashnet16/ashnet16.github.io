@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin: 2.5rem 0 0.75rem;
 }
@@ -228,11 +228,40 @@ article img {
   border-radius: 6px;
 }
 
+article figure {
+  margin: 1.5rem 0;
+}
+
+article figcaption {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
 article blockquote {
   border-left: 2px solid var(--line);
   padding-left: 1rem;
   color: var(--muted);
   margin-bottom: 1rem;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+article th,
+article td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+article th {
+  color: var(--muted);
+  font-weight: 600;
 }
 
 hr {
